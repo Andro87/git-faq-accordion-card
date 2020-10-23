@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face{
+    font-family: "kumbh";
+    src: url("../fonts/KumbhSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "kumbh";
+    src: url("../fonts/KumbhSans-Bold.ttf");
+    font-weight: 700;
+}
+
+body{
+    font-size: 12px;
+    font-family: "kumbh";
+    font-weight: 400;
+    color: hsl(237, 12%, 33%);
+}
+
+
+h1{
+    color: hsl(238, 29%, 16%);
+    font-family: "kumbh";
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+.section{
+    border:1px solid red;
+    padding: 75px 160px;
+    background: linear-gradient(to bottom,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+
+.container{
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1440px;
+}
+
+
+.illustration{
+    border: 1px solid orangered;
+    background: url("../images/bg-pattern-desktop.svg") bottom,url("../images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+.desktop{
+ position: absolute; 
+ top: 50%; 
+}
+
+.box{
+    border: 1px solid brown;
+    padding: 35px;
+}
+
+.question{
+    border:1px solid green;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid  hsl(240, 5%, 91%);
+}
+
+.question p:hover{
+    color:hsl(14, 88%, 65%);
+    font-family: "kumbh";
+    font-weight: 700;
+}
+
+.button{
+    margin-left: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+}
+ 
+
+
+
+.color{
+
+    color: hsl(238, 29%, 16%);
+    color: hsl(14, 88%, 65%);
+
+/* Gradient*/
+
+/*Background gradient*/
+
+color: hsl(273, 75%, 66%);
+color: hsl(240, 73%, 65%);
+
+/* Neutral*/
+
+/* Text*/
+
+color: hsl(237, 12%, 33%);
+color: hsl(240, 6%, 50%);
+
+/* Dividers*/
+
+color: hsl(240, 5%, 91%);
+
+}
+
+
+
+
+@media only screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 160px;
+    }
+
+    .section{
+        padding: 35px;
+    }
+
+    .container{
+        display: block;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+
+    .illustration{
+        border: 1px solid orangered;
+        background: url("../images/illustration-woman-online-mobile.svg") top,url("../images/bg-pattern-mobile.svg") bottom;
+        background-repeat: no-repeat;
+        transform: translateY(50%);
+    }
+
+
+    .box{
+        border-radius: 20px;
+        background-color: white;
+    }
+
+
+}
